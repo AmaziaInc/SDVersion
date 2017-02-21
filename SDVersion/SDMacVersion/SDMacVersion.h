@@ -52,7 +52,9 @@ typedef NS_ENUM(NSInteger, DeviceScreenResolution) {
 + (DeviceVersion)deviceVersion;
 + (NSString *)deviceVersionString;
 + (DeviceSize)deviceSize;
++ (NSString*)deviceSizeName;
 + (NSSize)deviceScreenResolutionPixelSize;
 + (DeviceScreenResolution)deviceScreenResolution;
++ (NSString*)deviceScreenResolutionName;
 
 @end

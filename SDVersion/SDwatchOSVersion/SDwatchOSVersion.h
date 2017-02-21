@@ -41,7 +41,9 @@ static NSString *DeviceSizeNames[] = {
 #define watchOSVersionLessThanOrEqualTo(v)        ([[[WKInterfaceDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedDescending)
 
 + (DeviceVersion)deviceVersion;
++ (NSString*)deviceVersionName;
 + (DeviceSize)deviceSize;
++ (NSString*)deviceSizeName;
 + (NSString*)deviceName;
 
 @end
