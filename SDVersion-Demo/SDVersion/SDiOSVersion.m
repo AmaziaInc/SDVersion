@@ -131,6 +131,16 @@
     return deviceSize;
 }
 
++ (NSString *)deviceVersionName
+{
+    return DeviceVersionNames[[self deviceVersion]];
+}
+
++ (NSString *)deviceSizeName
+{
+    return DeviceSizeNames[[self deviceSize]];
+}
+
 + (NSString*)deviceName
 {
     struct utsname systemInfo;

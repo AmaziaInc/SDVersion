@@ -68,7 +68,9 @@ static NSString *DeviceScreenResolutionNames[] = {
 + (DeviceVersion)deviceVersion;
 + (NSString *)deviceVersionString;
 + (DeviceSize)deviceSize;
++ (NSString*)deviceSizeName;
 + (NSSize)deviceScreenResolutionPixelSize;
 + (DeviceScreenResolution)deviceScreenResolution;
++ (NSString*)deviceScreenResolutionName;
 
 @end

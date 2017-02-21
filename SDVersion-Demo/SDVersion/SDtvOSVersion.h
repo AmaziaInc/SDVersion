@@ -29,6 +29,7 @@ static NSString *DeviceVersionNames[] = {
 #define tvOSVersionLessThanOrEqualTo(v)        ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedDescending)
 
 + (DeviceVersion)deviceVersion;
++ (NSString*)deviceVersionName;
 + (NSString*)deviceName;
 
 @end

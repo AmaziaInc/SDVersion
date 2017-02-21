@@ -31,6 +31,11 @@
     return version;
 }
 
++ (NSString *)deviceVersionName
+{
+    return DeviceVersionNames[[self deviceVersion]];
+}
+
 + (NSString*)deviceName
 {
     struct utsname systemInfo;

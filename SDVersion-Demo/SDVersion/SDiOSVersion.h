@@ -109,8 +109,10 @@ static NSString *DeviceSizeNames[] = {
 #define iOSVersionLessThanOrEqualTo(v)        ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedDescending)
 
 + (DeviceVersion)deviceVersion;
++ (NSString*)deviceVersionName;
 + (DeviceSize)resolutionSize;
 + (DeviceSize)deviceSize;
++ (NSString*)deviceSizeName;
 + (NSString*)deviceName;
 + (BOOL)isZoomed;
 

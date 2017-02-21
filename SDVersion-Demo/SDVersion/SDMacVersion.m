@@ -117,6 +117,16 @@ static NSString * const SDMacResolution  = @"SDMacResolution";
     return [[self deviceInformationForModel:[self currentModel]] objectForKey:SDMacDeviceName];
 }
 
++ (NSString *)deviceSizeName
+{
+    return DeviceSizeNames[[self deviceSize]];
+}
+
++ (NSString *)deviceScreenResolutionName
+{
+    return DeviceScreenResolutionNames[[self deviceScreenResolution]];
+}
+
 + (NSSize)deviceScreenResolutionPixelSize {
 	NSScreen *screen = [NSScreen mainScreen];
 	NSDictionary *description = [screen deviceDescription];
